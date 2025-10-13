@@ -27,7 +27,14 @@ export default function App() {
   }, []);
 
   return (
-    <main style={{ minHeight: "100svh", display: "grid", placeItems: "center", padding: 24, fontFamily: "system-ui, -apple-system, Segoe UI, Roboto, sans-serif" }}>
+<main
+  style={{
+    width: "100%",
+    maxWidth: 800,
+    padding: 24,
+    fontFamily: "system-ui, -apple-system, Segoe UI, Roboto, sans-serif"
+  }}
+>
       <div style={{ maxWidth: 700, width: "100%", background: "#fff", border: "1px solid #eee", borderRadius: 16, padding: 24, boxShadow: "0 10px 30px rgba(0,0,0,0.06)" }}>
         <h1 style={{ marginTop: 0, marginBottom: 12 }}>Quote of the Day</h1>
 
