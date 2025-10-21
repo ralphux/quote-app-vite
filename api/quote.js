@@ -14,7 +14,8 @@ export default async function handler(req, res) {
       content: data.content,
       author: data.author,
     });
-  } catch (e) {
+  } catch (error) {
+    console.error("Server error:", error);
     return res.status(500).json({ error: "Server error" });
   }
 }
